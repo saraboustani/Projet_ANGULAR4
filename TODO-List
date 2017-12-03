@@ -1,0 +1,7 @@
+TODO LIST:
+Faire la partie My Items avec tableau listant tous ces items avec sur chaque ligne un lien vers une page contenant description+ image associée au lien, rajouter aussi un lien Add Items sur cette page.(en cours ollierg)
+-Faire la page Add a new Item dans laquelle avec champ Title, Description, et Pictures+ Bouton Choose File ouvrant un explorateur de fichier+ texte du titre du fichier selectionné( affiche "No File" si pas de fichiers selectionné, Bouton Submit et Cancel
+-Faire la Partie Search dans laquelle on a un champ de recherche permettant de chercher tous les Items avec Titre, date d'ajout et auteur de l'Item (en cours sarah)
+-Faire le contrat 
+
+
