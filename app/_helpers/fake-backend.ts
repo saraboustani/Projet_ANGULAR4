@@ -3,6 +3,7 @@ import { MockBackend, MockConnection } from '@angular/http/testing';
 
 import { User } from '../_models/index';
 
+    //A lire absolument http://jasonwatmore.com/post/2016/08/16/angular-2-jwt-authentication-example-tutorial
 export let fakeBackendProvider = {
     // use fake backend in place of Http service for backend-less development
     provide: Http,
@@ -342,7 +343,8 @@ export let fakeBackendProvider = {
                         connection.mockRespond(new Response(new ResponseOptions({ status: 401 })));
                     }
                 }
-
+                //TODO ajouter la meme chose pour message
+                //TODO getContractByUserId getMessageByUserId et getItemByUserId à ajouter egalement
             }, 500);
         });
 

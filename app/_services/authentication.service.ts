@@ -6,8 +6,11 @@ import 'rxjs/add/operator/map'
 
 @Injectable()
 export class AuthenticationService {
+    //Variable isLogged observé par appComponent et modifier par loginComponent via les methodes login() et logout()
+    // https://angular.io/guide/component-interaction#parent-and-children-communicate-via-a-service
     isLogged = new Subject<boolean>();
     isLogged$ = this.isLogged.asObservable();
+
     constructor(private http: Http) { }
 
     login(username: string, password: string) {

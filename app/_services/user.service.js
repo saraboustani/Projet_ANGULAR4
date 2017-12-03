@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 var UserService = (function () {
+    //voir fakeBackend pour voir comment ses methodes sont simulées
     function UserService(http) {
         this.http = http;
     }

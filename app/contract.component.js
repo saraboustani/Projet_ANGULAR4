@@ -44,7 +44,7 @@ var ContractsComponent = (function () {
         var _this = this;
         this.contractService.getAll().subscribe(function (contracts) { _this.contracts = contracts; });
         this.contracts = this.contracts.filter(function (contract) { return (_this.isUserContract(contract)); });
-    };
+    }; //TODO charge tous les contracts mais ne doit charger que les contracts du currentUser
     ContractsComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

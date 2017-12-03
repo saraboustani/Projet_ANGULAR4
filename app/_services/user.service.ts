@@ -5,6 +5,7 @@ import { User } from '../_models/index';
 
 @Injectable()
 export class UserService {
+    //voir fakeBackend pour voir comment ses methodes sont simulées
     constructor(private http: Http) { }
 
     getAll() {

@@ -14,6 +14,7 @@ var ItemService = (function () {
     function ItemService(http) {
         this.http = http;
     }
+    //voir fakeBackend pour voir comment ces methodes sont simulées
     ItemService.prototype.getAll = function () {
         return this.http.get('/api/items', this.jwt()).map(function (response) { return response.json(); });
     };

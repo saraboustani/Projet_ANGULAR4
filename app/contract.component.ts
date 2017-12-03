@@ -64,7 +64,7 @@ export class ContractsComponent {
     private loadUserContracts() {
       this.contractService.getAll().subscribe(contracts => { this.contracts = contracts; });
       this.contracts=this.contracts.filter(contract=>(this.isUserContract(contract)))
-    }
+    }//TODO charge tous les contracts mais ne doit charger que les contracts du currentUser
 
 
 }

@@ -15,6 +15,8 @@ require('rxjs/add/operator/map');
 var AuthenticationService = (function () {
     function AuthenticationService(http) {
         this.http = http;
+        //Variable isLogged observé par appComponent et modifier par loginComponent via les methodes login() et logout()
+        // https://angular.io/guide/component-interaction#parent-and-children-communicate-via-a-service
         this.isLogged = new Subject_1.Subject();
         this.isLogged$ = this.isLogged.asObservable();
     }

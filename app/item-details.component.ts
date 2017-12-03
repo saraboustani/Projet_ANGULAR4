@@ -34,7 +34,7 @@ export class ItemDetailsComponent  {
     private loading=false;
 	//private item : Item;
 	constructor(private router: Router,private route: ActivatedRoute, private itemService : ItemService, private alertService: AlertService){
-		itemService.getAll().subscribe(items => { this.items = items; }); //TODO (!) code sale!!recuperer le bon item avec itemservice.getById(id)
+		itemService.getAll().subscribe(items => { this.items = items; }); //TODO recuperer le bon item avec itemservice.getById(id) (à ajouter dans le fakeBackend)
 	}
 
 	getItemId(){

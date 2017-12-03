@@ -5,6 +5,7 @@ import { Message } from '../_models/index';
 
 @Injectable()
 export class MessageService {
+    //TODO modifier fakeBackend pour faire fonctionner ces methodes
     constructor(private http: Http) { }
 
     getAll() {

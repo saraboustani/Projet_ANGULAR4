@@ -7,7 +7,7 @@ import { User } from '../_models/index';
 @Injectable()
 export class ItemService {
     constructor(private http: Http) { }
-
+    //voir fakeBackend pour voir comment ces methodes sont simulées
     getAll() {
         return this.http.get('/api/items', this.jwt()).map((response: Response) => response.json());
     }

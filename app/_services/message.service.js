@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 var MessageService = (function () {
+    //TODO modifier fakeBackend pour faire fonctionner ces methodes
     function MessageService(http) {
         this.http = http;
     }

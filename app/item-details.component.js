@@ -20,7 +20,7 @@ var ItemDetailsComponent = (function () {
         this.itemService = itemService;
         this.alertService = alertService;
         this.loading = false;
-        itemService.getAll().subscribe(function (items) { _this.items = items; }); //TODO (!) code sale!!recuperer le bon item avec itemservice.getById(id)
+        itemService.getAll().subscribe(function (items) { _this.items = items; }); //TODO recuperer le bon item avec itemservice.getById(id) (à ajouter dans le fakeBackend)
     }
     ItemDetailsComponent.prototype.getItemId = function () {
         return this.route.snapshot.params["itemID"];

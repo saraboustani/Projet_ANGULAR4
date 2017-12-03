@@ -1,6 +1,7 @@
 "use strict";
 var http_1 = require('@angular/http');
 var testing_1 = require('@angular/http/testing');
+//A lire absolument http://jasonwatmore.com/post/2016/08/16/angular-2-jwt-authentication-example-tutorial
 exports.fakeBackendProvider = {
     // use fake backend in place of Http service for backend-less development
     provide: http_1.Http,
@@ -297,6 +298,8 @@ exports.fakeBackendProvider = {
                         connection.mockRespond(new http_1.Response(new http_1.ResponseOptions({ status: 401 })));
                     }
                 }
+                //TODO ajouter la meme chose pour message
+                //TODO getContractByUserId getMessageByUserId et getItemByUserId à ajouter egalement
             }, 500);
         });
         return new http_1.Http(backend, options);
